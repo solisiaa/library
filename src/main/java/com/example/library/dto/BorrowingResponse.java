@@ -15,6 +15,7 @@ public class BorrowingResponse {
     private Long id;
     private Long readerId;
     private String readerName;
+    private String readerUsername;
     private Long bookId;
     private String bookTitle;
     private LocalDateTime borrowDate;

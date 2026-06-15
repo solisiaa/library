@@ -134,6 +134,7 @@ public class BorrowingService {
                 .id(borrowing.getId())
                 .readerId(borrowing.getReader().getId())
                 .readerName(borrowing.getReader().getName())
+                .readerUsername(borrowing.getReader().getUser() != null ? borrowing.getReader().getUser().getUsername() : null)
                 .bookId(borrowing.getBook().getId())
                 .bookTitle(borrowing.getBook().getTitle())
                 .borrowDate(borrowing.getBorrowDate())
